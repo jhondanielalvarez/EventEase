@@ -1,0 +1,21 @@
+# Private configuration and runtime data
+.env
+.env.*
+!.env.example
+**/config.php
+**/first_admin_credentials.txt
+**/payment_proofs/
+**/eventease-private/
+**/logs/
+**/tmp/
+**/backups/
+**/*.log
+**/*.bak
+**/*.zip
+**/*.sql
+!setup/schema.sql
+**/node_modules/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+Options -Indexes
+<FilesMatch "(^\.|^(README\.md|composer\.json|composer\.lock)$)">
+    Require all denied
+</FilesMatch>
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule (^|/)\.(git|svn)(/|$) - [F,L,NC]
+</IfModule>
